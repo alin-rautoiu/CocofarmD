@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="CocoFarmContext.cs" />
     <Compile Include="DB.cs" />
+    <Compile Include="EFDataStore.cs" />
     <Compile Include="MemoryDataStore.cs" />
     <Compile Include="IDataStore.cs" />
     <Compile Include="ProdusDataStore.cs" />

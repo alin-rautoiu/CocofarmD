@@ -27,7 +27,8 @@ namespace CocoFarm
 
         private static ContainerBuilder RegisterServices(ContainerBuilder builder)
         {
-            builder.RegisterType(typeof(ProdusDataStore)).As(typeof(IDataStore<Produs>));
+            //builder.RegisterType(typeof(ProdusDataStore)).As(typeof(IDataStore<Produs>));
+            builder.RegisterGeneric(typeof(EFDataStore<>)).As(typeof(IDataStore<>));
             return builder;
         }
 
